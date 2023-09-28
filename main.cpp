@@ -109,7 +109,7 @@ void viewTasks() {
     }
     else {
         for (size_t i = 0; i < tasks.size(); ++i) {
-            cout << i + 1 << ". " << (tasks[i].completed ? "[X] " : "[ ] ")
+            cout << i + 1 << ". " << (tasks[i].completed ? "[Completed] " : "[Not Completed] ")
                 << tasks[i].description << " (Due: " << tasks[i].dueDate
                 << ", Priority: " << tasks[i].priority << ")\n";
         }
